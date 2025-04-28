@@ -125,6 +125,62 @@ footer {
     margin-top: 4rem;
 }
 
+.vision-layers {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.vision-layer {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.vision-layer:hover {
+    transform: translateY(-2px);
+}
+
+.vision-layer h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.vision-layer p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.vision-layer .focus {
+    color: #3498db;
+    font-weight: 600;
+}
+
+.vision-layer .components {
+    color: #2c3e50;
+}
+
+.vision-layer .expertise {
+    color: #27ae60;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    .vision-layers {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .vision-layer {
+        flex: 1;
+        min-width: 300px;
+    }
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5rem;
