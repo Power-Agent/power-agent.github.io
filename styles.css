@@ -33,9 +33,15 @@ header {
     position: relative;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+.header-content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.title-group {
+    margin-top: 1rem;
 }
 
 .logo {
@@ -48,7 +54,9 @@ header h1 {
 .subtitle {
     font-size: 1.5rem;
     opacity: 0.9;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
 
 main {
@@ -150,28 +158,36 @@ footer {
     right: 0;
     background-color: #24292e;
     color: white;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
     font-size: 0.9rem;
     text-decoration: none;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: background-color 0.3s ease;
+    border-radius: 6px;
+    transition: all 0.3s ease;
     z-index: 1000;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .github-banner:hover {
     background-color: #2f363d;
     color: white;
     text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .github-logo {
     fill: white;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+}
+
+.github-banner span {
+    font-weight: 500;
 }
 
 @media (max-width: 768px) {
@@ -179,12 +195,19 @@ footer {
         max-width: 300px;
     }
     
-    header h1 {
-        font-size: 2.5rem;
-    }
-    
     .subtitle {
         font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+    
+    .github-banner {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .github-logo {
+        width: 16px;
+        height: 16px;
     }
     
     .vision-image {
