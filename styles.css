@@ -30,6 +30,7 @@ header {
     color: white;
     padding: 2rem 0;
     text-align: center;
+    position: relative;
 }
 
 header h1 {
@@ -141,6 +142,36 @@ footer {
     display: block;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.github-banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #24292e;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.github-banner:hover {
+    background-color: #2f363d;
+    color: white;
+    text-decoration: none;
+}
+
+.github-logo {
+    fill: white;
+    width: 20px;
+    height: 20px;
 }
 
 @media (max-width: 768px) {
