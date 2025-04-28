@@ -124,16 +124,13 @@ a:hover {
 }
 
 .contact {
-    background-color: rgba(52, 152, 219, 0.1);
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-top: 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
 }
 
-.contact i {
-    margin-right: 0.5rem;
-    color: var(--secondary-color);
-}
 
 footer {
     background-color: var(--primary-color);
