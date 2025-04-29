@@ -44,7 +44,7 @@
                 </div>
                 <div class="repo-card">
                     <h3>PowerFM</h3>
-                    <p>Fine-tuned LLMs for power system tasks, full domain-specific Foundation Models (FMs), and benchmarking for model performance</p>
+                    <p>Fine-tuned LLMs for power system tasks, full domain-specific Foundation Models, and benchmarking for model performance</p>
                 </div>
             </div>
         </section>
@@ -80,10 +80,19 @@
         <section id="contribute">
             <h2>How to Contribute</h2>
             <p>Power Agent is a collaborative community-driven initiative. Power Agent users are encouraged to <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">fork</a> benchmark repositories and modify them for their own purposes and then contribute their enhancements back to the broader community via <a href="https://docs.github.com/en/pull-requests/collaborating/getting-started/about-pull-requests"> pull requests </a>.</p>
+            <p>To join the Power Agent organization or ask questions about contributions, please reach out to the administrator: <a href="mailto:qianzhang@g.harvard.edu">Qian Zhang</a></p>
            
-            <div class="contact">
-                <p>To join the Power Agent organization or ask questions about contributions, please reach out to the administrator: <a href="mailto:qianzhang@g.harvard.edu">Qian Zhang</a></p>
+            <div class="subscription-form">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for updates and announcements</p>
+                <form id="subscribe-form" target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSfW93GmaOHHSm_447kk_mQgSN9ZudPFCV7CROQ9bdPrAMMtLA/formResponse" method="POST">
+                    <div class="form-group">
+                        <input type="email" name="emailAddress" id="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </form>
             </div>
+            
         </section>
     </main>
 
@@ -92,5 +101,40 @@
             <p>&copy; 2025 Power Agent. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const button = form.querySelector('button');
+            const originalText = button.textContent;
+            const email = form.querySelector('#email').value;
+            
+            button.textContent = 'Subscribing...';
+            button.disabled = true;
+
+            // Submit to Google Forms
+            fetch(form.action, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams({
+                    'emailAddress': email
+                })
+            })
+            .then(() => {
+                alert('Thanks for subscribing!');
+                form.reset();
+            })
+            .catch(error => {
+                alert('An error occurred. Please try again.');
+            })
+            .finally(() => {
+                button.textContent = originalText;
+                button.disabled = false;
+            });
+        });
+    </script>
 </body>
 </html> 
