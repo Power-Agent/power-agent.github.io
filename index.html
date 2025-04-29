@@ -87,7 +87,7 @@
                 <p>Subscribe to our newsletter for updates and announcements</p>
                 <form id="subscribe-form" target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSfW93GmaOHHSm_447kk_mQgSN9ZudPFCV7CROQ9bdPrAMMtLA/formResponse" method="POST">
                     <div class="form-group">
-                        <input type="email" name="emailAddress" id="email" placeholder="Enter your email" required>
+                        <input type="email" name="entry.1572849290" id="email" placeholder="Enter your email" required>
                         <button type="submit">Subscribe</button>
                     </div>
                 </form>
@@ -112,6 +112,9 @@
             button.textContent = 'Subscribing...';
             button.disabled = true;
 
+            // For debugging - log the submission attempt
+            console.log('Attempting to submit:', email);
+
             // Submit to Google Forms
             fetch(form.action, {
                 method: 'POST',
@@ -120,14 +123,16 @@
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 body: new URLSearchParams({
-                    'emailAddress': email
+                    'entry.1572849290': email
                 })
             })
-            .then(() => {
+            .then(response => {
+                console.log('Submission response:', response);
                 alert('Thanks for subscribing!');
                 form.reset();
             })
             .catch(error => {
+                console.error('Submission error:', error);
                 alert('An error occurred. Please try again.');
             })
             .finally(() => {
