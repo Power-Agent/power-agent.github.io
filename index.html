@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="img/logo2.png">
 </head>
+
 <body class="bg-slate-50 text-slate-800 antialiased">
-<header class="bg-slate-900 text-white text-center py-10 relative shadow-xl">
+    <header class="bg-slate-900 text-white text-center py-10 relative shadow-xl">
         <div class="absolute top-5 right-5 z-10">
-            <a href="https://github.com/Power-Agent" class="github-banner bg-slate-800 text-white py-2 px-5 rounded-lg flex items-center gap-3 shadow-lg hover:bg-slate-700 transition-all duration-300 transform hover:-translate-y-0.5">
+            <a href="https://github.com/Power-Agent"
+                class="github-banner bg-slate-800 text-white py-2 px-5 rounded-lg flex items-center gap-3 shadow-lg hover:bg-slate-700 transition-all duration-300 transform hover:-translate-y-0.5">
                 <svg height="24" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="24" class="fill-current">
-                    <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+                    <path
+                        d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                    </path>
                 </svg>
                 <span class="font-semibold">View on GitHub</span>
             </a>
@@ -21,193 +26,309 @@
         <div class="container mx-auto px-4">
             <div class="title-group flex flex-col items-center gap-2">
                 <h1>
-                    <img src="img/poweragent_logo.png" alt="Power Agent Logo" class="w-full max-w-lg mx-auto block transition-transform duration-300 hover:scale-105">
+                    <img src="img/poweragent_logo.png" alt="Power Agent Logo"
+                        class="w-full max-w-lg mx-auto block transition-transform duration-300 hover:scale-105">
                 </h1>
-                <p class="subtitle text-xl md:text-2xl opacity-90 font-light tracking-wide text-slate-300 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg mt-2">Open-Source Agentic AI for the Power Grids</p>
+                <p
+                    class="subtitle text-xl md:text-2xl opacity-90 font-light tracking-wide text-slate-300 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg mt-2">
+                    Open-Source Agentic AI for the Power Grids</p>
             </div>
         </div>
-</header>
+    </header>
 
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
-        <section id="introduction" class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
+        <section id="introduction"
+            class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">Introduction</h2>
             <div class="prose prose-lg max-w-none text-slate-700">
-                <p>PowerAgent is an open-source community dedicated to accelerating the development of LLM-powered Tools and Agentic AI in the power systems domain. We aim to bridge the gap between cutting-edge AI and the real-world needs of system operators, electric utilities, and researchers, by creating a shared ecosystem of protocols, models, and workflows tailored for power applications.</p>
-                <p>We believe the future of agentic AI in power domain will be driven by the combined development and coordination of three key components — Foundation Models (FM), Model Context Protocol (MCP), and Workflows (WF).</p>
+                <p>PowerAgent is an open-source community dedicated to accelerating the development of LLM-powered Tools
+                    and Agentic AI in the power systems domain. We aim to bridge the gap between cutting-edge AI and the
+                    real-world needs of system operators, electric utilities, and researchers, by creating a shared
+                    ecosystem of protocols, models, and workflows tailored for power applications.</p>
+                <p>We believe the future of agentic AI in power domain will be driven by the combined development and
+                    coordination of three key components — Foundation Models (FM), Model Context Protocol (MCP), and
+                    Workflows (WF).</p>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-6 md:gap-8 mt-10">
-                <div class="repo-card bg-white/80 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 border border-slate-200">
+                <div
+                    class="repo-card bg-white/80 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 border border-slate-200">
                     <h3 class="text-xl font-semibold text-sky-600 mb-2">
-                        <a href="https://github.com/Power-Agent/PowerFM" target="_blank" class="hover:underline">PowerFM</a>
+                        <a href="https://github.com/Power-Agent/PowerFM" target="_blank"
+                            class="hover:underline">PowerFM</a>
                     </h3>
-                    <p class="text-slate-600">Fine-tuned LLMs for power system tasks, full domain-specific Foundation Models, and benchmarking for model performance</p>
+                    <p class="text-slate-600">Fine-tuned LLMs for power system tasks, full domain-specific Foundation
+                        Models, and benchmarking for model performance</p>
                 </div>
-                <div class="repo-card bg-white/80 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 border border-slate-200">
+                <div
+                    class="repo-card bg-white/80 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 border border-slate-200">
                     <h3 class="text-xl font-semibold text-sky-600 mb-2">
-                        <a href="https://github.com/Power-Agent/PowerMCP" target="_blank" class="hover:underline">PowerMCP</a>
+                        <a href="https://github.com/Power-Agent/PowerMCP" target="_blank"
+                            class="hover:underline">PowerMCP</a>
                     </h3>
-                    <p class="text-slate-600">Protocols enabling LLMs to control and interact with power domain software and tools</p>
+                    <p class="text-slate-600">Protocols enabling LLMs to control and interact with power domain software
+                        and tools</p>
                 </div>
-                <div class="repo-card bg-white/80 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 border border-slate-200">
+                <div
+                    class="repo-card bg-white/80 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 border border-slate-200">
                     <h3 class="text-xl font-semibold text-sky-600 mb-2">
-                        <a href="https://github.com/Power-Agent/PowerWF" target="_blank" class="hover:underline">PowerWF</a>
+                        <a href="https://github.com/Power-Agent/PowerWF" target="_blank"
+                            class="hover:underline">PowerWF</a>
                     </h3>
-                    <p class="text-slate-600">Modular agentic workflows for orchestrating models, tools, and decisions</p>
+                    <p class="text-slate-600">Modular agentic workflows for orchestrating models, tools, and decisions
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section id="motivation" class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
+        <section id="motivation"
+            class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">Motivation</h2>
             <div class="prose prose-lg max-w-none text-slate-700">
-                <p>The rapid rise of LLMs and agentic frameworks has opened new frontiers in intelligent software. Inspired by the success of open-source initiatives in LLMs (like <a href="https://deepseek.com" class="text-sky-600 hover:underline">DeepSeek</a> and <a href="https://www.llama.com" class="text-sky-600 hover:underline">Llama</a>) and agentic control protocols (especially Anthropic's <a href="https://www.anthropic.com/news/model-context-protocol" class="text-sky-600 hover:underline">MCP</a> community), we believe it's time to bring the same spirit of innovation and openness to the power systems domain.</p>
+                <p>The rapid rise of LLMs and agentic frameworks has opened new frontiers in intelligent software.
+                    Inspired by the success of open-source initiatives in LLMs (like <a href="https://deepseek.com"
+                        class="text-sky-600 hover:underline">DeepSeek</a> and <a href="https://www.llama.com"
+                        class="text-sky-600 hover:underline">Llama</a>) and agentic control protocols (especially
+                    Anthropic's <a href="https://www.anthropic.com/news/model-context-protocol"
+                        class="text-sky-600 hover:underline">MCP</a> community), we believe it's time to bring the same
+                    spirit of innovation and openness to the power systems domain.</p>
             </div>
-        </section>
-        
-        <section id="vision" class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">Vision</h2>
-            <div class="vision-statement bg-sky-50 p-6 rounded-lg my-8 text-center border-l-4 border-sky-500">
-                <p class="text-xl md:text-2xl text-slate-800 font-semibold"><strong>Toward General Intelligence for Power Grids through Open-Source Community</strong></p>
-            </div>
-            <div class="prose prose-lg max-w-none text-slate-700">
-                <p>We are building a comprehensive ecosystem based on three interconnected layers: workflow automation, tool integration, and domain-specialized foundation models. Through this layered architecture, we aim to deliver scalable and intelligent solutions, accelerate the deployment of agentic AI systems, and foster an open, collaborative community within the power sector.</p>
-            </div>
-            <img src="img/vision.png" alt="Power Agent Vision" class="w-full max-w-4xl mx-auto my-10 rounded-lg shadow-xl border border-slate-200">
         </section>
 
-        <section id="quick-start" class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
+        <section id="vision"
+            class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">Vision</h2>
+            <div class="vision-statement bg-sky-50 p-6 rounded-lg my-8 text-center border-l-4 border-sky-500">
+                <p class="text-xl md:text-2xl text-slate-800 font-semibold"><strong>Toward General Intelligence for
+                        Power Grids through Open-Source Community</strong></p>
+            </div>
+            <div class="prose prose-lg max-w-none text-slate-700">
+                <p>We are building a comprehensive ecosystem based on three interconnected layers: workflow automation,
+                    tool integration, and domain-specialized foundation models. Through this layered architecture, we
+                    aim to deliver scalable and intelligent solutions, accelerate the deployment of agentic AI systems,
+                    and foster an open, collaborative community within the power sector.</p>
+            </div>
+            <img src="img/vision.png" alt="Power Agent Vision"
+                class="w-full max-w-4xl mx-auto my-10 rounded-lg shadow-xl border border-slate-200">
+        </section>
+
+        <section id="quick-start"
+            class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">Quick Start</h2>
             <div class="rounded-lg overflow-hidden shadow-inner border border-slate-200">
-                <iframe class="w-full" style="height:80vh;" src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/Power-Agent/PowerMCP/main/PowerMCP_Tutorial.pdf&embedded=true" frameborder="0"></iframe>
+                <iframe class="w-full" style="height:80vh;"
+                    src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/Power-Agent/PowerMCP/main/PowerMCP_Tutorial.pdf&embedded=true"
+                    frameborder="0"></iframe>
             </div>
         </section>
 
         <section id="demos" class="mb-16 md:mb-20">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-10 tracking-tight text-center">Demos</h2>
             <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
-                <div class="demo-card bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-slate-200/80">
+                <div
+                    class="demo-card bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-slate-200/80">
                     <h3 class="text-xl font-bold text-slate-800 mb-4">Grid Impact Evaluation</h3>
                     <div class="rounded-lg overflow-hidden shadow-inner border border-slate-200">
-                        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/LxF8RqsNf04" title="Grid Impact Evaluation for Large Load Interconnection Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/LxF8RqsNf04"
+                            title="Grid Impact Evaluation for Large Load Interconnection Demo" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                    <p class="mt-4 text-slate-600">This demo showcases how Agentic AI can streamline the grid impact evaluation process for large loads like data centers, automating analysis and report generation.</p>
+                    <p class="mt-4 text-slate-600">This demo showcases how Agentic AI can streamline the grid impact
+                        evaluation process for large loads like data centers, automating analysis and report generation.
+                    </p>
                 </div>
 
-                <div class="demo-card bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-slate-200/80">
+                <div
+                    class="demo-card bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-slate-200/80">
                     <h3 class="text-xl font-bold text-slate-800 mb-4">Contingency Evaluation</h3>
                     <div class="rounded-lg overflow-hidden shadow-inner border border-slate-200">
-                        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/MbF-SlBI4Ws" title="Contingency Evaluation Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/MbF-SlBI4Ws"
+                            title="Contingency Evaluation Demo" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                    <p class="mt-4 text-slate-600">An LLM automatically operates power system software (PowerWorld, pandapower) to perform contingency analysis and generate professional reports.</p>
+                    <p class="mt-4 text-slate-600">An LLM automatically operates power system software (PowerWorld,
+                        pandapower) to perform contingency analysis and generate professional reports.</p>
                 </div>
 
-                <div class="demo-card bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-slate-200/80">
+                <div
+                    class="demo-card bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-slate-200/80">
                     <h3 class="text-xl font-bold text-slate-800 mb-4">Load Growth Evaluation</h3>
                     <div class="rounded-lg overflow-hidden shadow-inner border border-slate-200">
-                        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/euFUvhhV5dM" title="Load Growth Evaluation Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/euFUvhhV5dM"
+                            title="Load Growth Evaluation Demo" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                    <p class="mt-4 text-slate-600">An LLM operates PowerWorld to evaluate different load growth scenarios and generate professional reports with recommendations.</p>
+                    <p class="mt-4 text-slate-600">An LLM operates PowerWorld to evaluate different load growth
+                        scenarios and generate professional reports with recommendations.</p>
                 </div>
 
-                <div class="demo-card bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-slate-200/80">
+                <div
+                    class="demo-card bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-slate-200/80">
                     <h3 class="text-xl font-bold text-slate-800 mb-4">Electricity Market Expert</h3>
                     <div class="rounded-lg overflow-hidden shadow-inner border border-slate-200">
-                        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/ccY93ssvUwU" title="Electricity Market Expert Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/ccY93ssvUwU"
+                            title="Electricity Market Expert Demo" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                    <p class="mt-4 text-slate-600">An automated workflow that handles electricity market inquiries, generates professional responses, and supports human-in-the-loop review.</p>
+                    <p class="mt-4 text-slate-600">An automated workflow that handles electricity market inquiries,
+                        generates professional responses, and supports human-in-the-loop review.</p>
                 </div>
 
-                <div class="demo-card bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-slate-200/80">
+                <div
+                    class="demo-card bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-slate-200/80">
                     <h3 class="text-xl font-bold text-slate-800 mb-4">Datacenter Siting Expert</h3>
                     <div class="rounded-lg overflow-hidden shadow-inner border border-slate-200">
-                        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/ZfVGsxCv0eg" title="Datacenter Siting Assistant: Solvtra Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/ZfVGsxCv0eg"
+                            title="Datacenter Siting Assistant: Solvtra Demo" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                    <p class="mt-4 text-slate-600"> This tool leverages RAG to provide detailed information for potential datacenter locations, including local regulations, costs, and infrastructure. <a href="https://huggingface.co/spaces/zhangqianleo/datacenterAgent" target="_blank" class="text-sky-600 hover:underline font-semibold">Try it on Hugging Face</a>.</p>
+                    <p class="mt-4 text-slate-600"> This tool leverages RAG to provide detailed information for
+                        potential datacenter locations, including local regulations, costs, and infrastructure. <a
+                            href="https://huggingface.co/spaces/zhangqianleo/datacenterAgent" target="_blank"
+                            class="text-sky-600 hover:underline font-semibold">Try it on Hugging Face</a>.</p>
                 </div>
             </div>
         </section>
 
-        <section id="community" class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
+        <section id="community"
+            class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">Community</h2>
             <div class="prose prose-lg max-w-none text-slate-700 space-y-4">
-                <p>Like other open-source communities, PowerAgent is built by and for the community. GitHub was chosen as the home of this initiative to enable transparent, global collaboration. Maintained by the <a href="https://pai.seas.harvard.edu" class="text-sky-600 hover:underline">Power and AI Initiative (PAI)</a> at Harvard SEAS, all contributions are reviewed to ensure they are relevant and open-source, utility, and integrity. We invite researchers, engineers, and developers across disciplines to take part in shaping this ecosystem.</p>
+                <p>Like other open-source communities, PowerAgent is built by and for the community. GitHub was chosen
+                    as the home of this initiative to enable transparent, global collaboration. Maintained by the <a
+                        href="https://pai.seas.harvard.edu" class="text-sky-600 hover:underline">Power and AI Initiative
+                        (PAI)</a> at Harvard SEAS, all contributions are reviewed to ensure they are relevant and
+                    open-source, utility, and integrity. We invite researchers, engineers, and developers across
+                    disciplines to take part in shaping this ecosystem.</p>
 
-                <h3 class="text-2xl font-semibold text-slate-800 mb-3 tracking-tight">Simple and Unrestricted Access</h3>
-                <p>To keep PowerAgent accessible with minimal effort, all current benchmarks are maintained and tested using Cursor, one of the most popular AI coding IDEs. In the interest of open collaboration and replicable experiments, all PowerAgent code are distributed under the MIT license. While not required, we appreciate credit or acknowledgment of the original creators when reusing or building upon these resources.</p>
+                <h3 class="text-2xl font-semibold text-slate-800 mb-3 tracking-tight">Simple and Unrestricted Access
+                </h3>
+                <p>To keep PowerAgent accessible with minimal effort, all current benchmarks are maintained and tested
+                    using Cursor, one of the most popular AI coding IDEs. In the interest of open collaboration and
+                    replicable experiments, all PowerAgent code are distributed under the MIT license. While not
+                    required, we appreciate credit or acknowledgment of the original creators when reusing or building
+                    upon these resources.</p>
 
                 <div class="my-6">
                     <h3 class="text-2xl font-semibold text-slate-800 mb-3 tracking-tight">Join the Conversation</h3>
                     <div class="bg-sky-50 p-4 rounded-lg border border-sky-200">
                         <p class="flex items-center gap-2 text-slate-700">
                             <i class="fab fa-slack text-sky-600 text-xl"></i>
-                            Join our community on <a href="https://join.slack.com/t/poweragentslack/shared_invite/zt-3c14g1lv4-LfwB2DQU1_ZwTyxJO6k_5Q" target="_blank" class="text-sky-600 hover:underline font-semibold">Slack</a> to connect with other developers, ask questions, and share your ideas.
+                            Join our community on <a
+                                href="https://join.slack.com/t/poweragentslack/shared_invite/zt-3c14g1lv4-LfwB2DQU1_ZwTyxJO6k_5Q"
+                                target="_blank" class="text-sky-600 hover:underline font-semibold">Slack</a> to connect
+                            with other developers, ask questions, and share your ideas.
                         </p>
                     </div>
                 </div>
 
                 <h3 class="text-2xl font-semibold text-slate-800 mb-3 tracking-tight">For Academic Use</h3>
-                <p>Please cite the following <a href="https://ieeexplore.ieee.org/document/11131348" target="_blank" class="text-sky-600 hover:underline">paper</a>:</p>
+                <p>Please cite the following <a href="https://ieeexplore.ieee.org/document/11131348" target="_blank"
+                        class="text-sky-600 hover:underline">paper</a>:</p>
             </div>
             <div class="citation bg-slate-100 p-6 rounded-lg border-l-4 border-slate-400 my-8">
-                <p class="italic text-slate-700">Qian Zhang and Le Xie. "PowerAgent: A Road Map Toward Agentic Intelligence in Power Systems: Foundation Model, Model Context Protocol, and Workflow," in IEEE Power and Energy Magazine, vol. 23, no. 5, pp. 93-101, 2025.</p>
+                <p class="italic text-slate-700">Qian Zhang and Le Xie. "PowerAgent: A Road Map Toward Agentic
+                    Intelligence in Power Systems: Foundation Model, Model Context Protocol, and Workflow," in IEEE
+                    Power and Energy Magazine, vol. 23, no. 5, pp. 93-101, 2025.</p>
             </div>
         </section>
 
-        <section id="core-team" class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
+        <section id="core-team"
+            class="mb-16 md:mb-20 bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">Core Team</h2>
             <div class="prose prose-lg max-w-none text-slate-700 space-y-6">
                 <div>
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">Faculty Leads</h3>
-                    <p><a href="https://seas.harvard.edu/person/le-xie" target="_blank" class="text-sky-600 hover:underline">Le Xie</a></p>
+                    <p><a href="https://seas.harvard.edu/person/le-xie" target="_blank"
+                            class="text-sky-600 hover:underline">Le Xie</a></p>
                 </div>
-                
+
                 <div>
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">PowerAgent Platform</h3>
-                    <p><a href="https://www.linkedin.com/in/qian-zhang-75323111b/" target="_blank" class="text-sky-600 hover:underline">Qian Zhang</a>, <a href="https://www.linkedin.com/in/karina-chung/" target="_blank" class="text-sky-600 hover:underline">Karina Chung</a></p>
+                    <p><a href="https://www.linkedin.com/in/qian-zhang-75323111b/" target="_blank"
+                            class="text-sky-600 hover:underline">Qian Zhang</a>, <a
+                            href="https://www.linkedin.com/in/karina-chung/" target="_blank"
+                            class="text-sky-600 hover:underline">Karina Chung</a>, <a
+                            href="https://www.linkedin.com/in/skylerliu/" target="_blank"
+                            class="text-sky-600 hover:underline">Skyler Liu</a></p>
                 </div>
-                
+
                 <div>
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">PowerMCP</h3>
-                    <p><a href="https://www.linkedin.com/in/qian-zhang-75323111b/" target="_blank" class="text-sky-600 hover:underline">Qian Zhang</a>, <a href="https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" target="_blank" class="text-sky-600 hover:underline">Muhy Eddin Za'ter</a>, <a href="https://www.linkedin.com/in/stephenjenkins2/" target="_blank" class="text-sky-600 hover:underline">Stephen Jenkins</a>, <a href="https://www.linkedin.com/in/maanas-goel/" target="_blank" class="text-sky-600 hover:underline">Maanas Goel</a></p>
+                    <p><a href="https://www.linkedin.com/in/qian-zhang-75323111b/" target="_blank"
+                            class="text-sky-600 hover:underline">Qian Zhang</a>, <a
+                            href="https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" target="_blank"
+                            class="text-sky-600 hover:underline">Muhy Eddin Za'ter</a>, <a
+                            href="https://www.linkedin.com/in/stephenjenkins2/" target="_blank"
+                            class="text-sky-600 hover:underline">Stephen Jenkins</a>, <a
+                            href="https://www.linkedin.com/in/maanas-goel/" target="_blank"
+                            class="text-sky-600 hover:underline">Maanas Goel</a></p>
                 </div>
-                
+
                 <div>
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">PowerFM</h3>
-                    <p><a href="https://liushaohuai5.github.io/" target="_blank" class="text-sky-600 hover:underline">Shaohuai Liu</a>, <a href="https://www.alban-puech.fr/" target="_blank" class="text-sky-600 hover:underline">Alban Puech</a>, <a href="https://www.linkedin.com/in/lin-dong-464a08222/" target="_blank" class="text-sky-600 hover:underline">Lin Dong</a>, <a href="https://www.linkedin.com/in/qian-zhang-75323111b/" target="_blank" class="text-sky-600 hover:underline">Qian Zhang</a></p>
+                    <p><a href="https://liushaohuai5.github.io/" target="_blank"
+                            class="text-sky-600 hover:underline">Shaohuai Liu</a>, <a href="https://www.alban-puech.fr/"
+                            target="_blank" class="text-sky-600 hover:underline">Alban Puech</a>, <a
+                            href="https://www.linkedin.com/in/lin-dong-464a08222/" target="_blank"
+                            class="text-sky-600 hover:underline">Lin Dong</a>, <a
+                            href="https://www.linkedin.com/in/qian-zhang-75323111b/" target="_blank"
+                            class="text-sky-600 hover:underline">Qian Zhang</a></p>
                 </div>
-                
+
                 <div>
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">PowerWF</h3>
-                    <p><a href="https://www.linkedin.com/in/lin-dong-464a08222/" target="_blank" class="text-sky-600 hover:underline">Lin Dong</a>, <a href="https://www.linkedin.com/in/qian-zhang-75323111b/" target="_blank" class="text-sky-600 hover:underline">Qian Zhang</a></p>
+                    <p><a href="https://www.linkedin.com/in/lin-dong-464a08222/" target="_blank"
+                            class="text-sky-600 hover:underline">Lin Dong</a>, <a
+                            href="https://www.linkedin.com/in/qian-zhang-75323111b/" target="_blank"
+                            class="text-sky-600 hover:underline">Qian Zhang</a></p>
                 </div>
             </div>
-            
+
             <div class="mt-10 pt-8 border-t border-slate-200">
                 <div class="flex flex-col md:flex-row items-center justify-center gap-8">
                     <a href="https://seas.harvard.edu/" target="_blank" class="hover:scale-105 transition-transform">
-                        <img src="img/seaslogo.png" alt="Harvard SEAS Logo" class="h-16 md:h-20 opacity-80 hover:opacity-100 transition-opacity">
+                        <img src="img/seaslogo.png" alt="Harvard SEAS Logo"
+                            class="h-16 md:h-20 opacity-80 hover:opacity-100 transition-opacity">
                     </a>
-                    <a href="https://pai.seas.harvard.edu/" target="_blank" class="hover:scale-105 transition-transform">
-                        <img src="img/pailogo_black.png" alt="Power and AI Initiative Logo" class="h-16 md:h-20 opacity-80 hover:opacity-100 transition-opacity">
+                    <a href="https://pai.seas.harvard.edu/" target="_blank"
+                        class="hover:scale-105 transition-transform">
+                        <img src="img/pailogo_black.png" alt="Power and AI Initiative Logo"
+                            class="h-16 md:h-20 opacity-80 hover:opacity-100 transition-opacity">
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="contribute" class="bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
+        <section id="contribute"
+            class="bg-white/70 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg border border-slate-200/80">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">How to Contribute</h2>
             <div class="prose prose-lg max-w-none text-slate-700">
-                <p>PowerAgent is a collaborative community-driven initiative. Users are encouraged to <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo" class="text-sky-600 hover:underline">fork</a> benchmark repositories, modify them, and contribute enhancements back to the broader community via <a href="https://docs.github.com/en/pull-requests/collaborating/getting-started/about-pull-requests" class="text-sky-600 hover:underline">pull requests</a>.</p>
-                <p>To join the PowerAgent community core team or ask questions, please reach out to the administrator: <a href="mailto:qianzhang@g.harvard.edu" class="text-sky-600 hover:underline">Qian Zhang</a></p>
+                <p>PowerAgent is a collaborative community-driven initiative. Users are encouraged to <a
+                        href="https://docs.github.com/en/get-started/quickstart/fork-a-repo"
+                        class="text-sky-600 hover:underline">fork</a> benchmark repositories, modify them, and
+                    contribute enhancements back to the broader community via <a
+                        href="https://docs.github.com/en/pull-requests/collaborating/getting-started/about-pull-requests"
+                        class="text-sky-600 hover:underline">pull requests</a>.</p>
+                <p>To join the PowerAgent community core team or ask questions, please reach out to the administrator:
+                    <a href="mailto:qianzhang@g.harvard.edu" class="text-sky-600 hover:underline">Qian Zhang</a></p>
             </div>
             <div class="subscription-form mt-10 pt-8 border-t border-slate-200">
                 <h3 class="text-xl font-semibold text-slate-800 mb-2">Stay Updated</h3>
                 <p class="text-slate-600 mb-4">Subscribe to our newsletter for updates and announcements.</p>
-                <form id="subscribe-form" target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSfW93GmaOHHSm_447kk_mQgSN9ZudPFCV7CROQ9bdPrAMMtLA/formResponse" method="POST">
+                <form id="subscribe-form" target="_blank"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSfW93GmaOHHSm_447kk_mQgSN9ZudPFCV7CROQ9bdPrAMMtLA/formResponse"
+                    method="POST">
                     <div class="flex flex-col sm:flex-row gap-3">
-                        <input type="email" name="entry.1572849290" id="email" placeholder="Enter your email" required class="flex-grow p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none transition-shadow shadow-sm">
-                        <button type="submit" class="bg-sky-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-sky-700 transition-colors duration-300 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">Subscribe</button>
+                        <input type="email" name="entry.1572849290" id="email" placeholder="Enter your email" required
+                            class="flex-grow p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none transition-shadow shadow-sm">
+                        <button type="submit"
+                            class="bg-sky-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-sky-700 transition-colors duration-300 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">Subscribe</button>
                     </div>
                 </form>
             </div>
@@ -220,13 +341,13 @@
         </div>
     </footer>
     <script>
-        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+        document.getElementById('subscribe-form').addEventListener('submit', function (e) {
             e.preventDefault();
             const form = this;
             const button = form.querySelector('button');
             const originalText = button.textContent;
             const email = form.querySelector('#email').value;
-            
+
             button.textContent = 'Subscribing...';
             button.disabled = true;
 
@@ -244,20 +365,21 @@
                     'entry.1572849290': email
                 })
             })
-            .then(response => {
-                console.log('Submission response:', response);
-                alert('Thanks for subscribing!');
-                form.reset();
-            })
-            .catch(error => {
-                console.error('Submission error:', error);
-                alert('An error occurred. Please try again.');
-            })
-            .finally(() => {
-                button.textContent = originalText;
-                button.disabled = false;
-            });
+                .then(response => {
+                    console.log('Submission response:', response);
+                    alert('Thanks for subscribing!');
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Submission error:', error);
+                    alert('An error occurred. Please try again.');
+                })
+                .finally(() => {
+                    button.textContent = originalText;
+                    button.disabled = false;
+                });
         });
     </script>
 </body>
-</html> 
+
+</html>
