@@ -1,6 +1,6 @@
-# Power Agent Website
+# PowerAgent Website
 
-This repository contains the official website for the Power Agent open-source community, dedicated to accelerating the development of LLM-powered tools and agentic workflows in the power systems domain.
+This repository contains the official website for the PowerAgent open-source community, dedicated to accelerating the development of LLM-powered tools and agentic workflows in the power systems domain.
 
 
 ## Contact
