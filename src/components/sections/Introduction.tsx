@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, Brain, Workflow, Puzzle } from "lucide-react";
+import { ExternalLink, Brain, Workflow, Puzzle, BookOpen } from "lucide-react";
 
 const repositories = [
   {
@@ -19,6 +19,12 @@ const repositories = [
     icon: Workflow,
     description: "Modular agentic workflows for orchestrating models, tools, and decisions",
     url: "https://github.com/Power-Agent/PowerWF",
+  },
+  {
+    name: "PowerSkills",
+    icon: BookOpen,
+    description: "PowerSkills are Agent Skills for power-system analysis, enabling simulation, analysis, and optimization across multiple software tools.",
+    url: "https://github.com/Power-Agent/PowerSkills",
   },
 ];
 
@@ -43,7 +49,7 @@ const Introduction = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {repositories.map((repo) => {
             const Icon = repo.icon;
             return (

@@ -8,9 +8,23 @@ const demos = [
     description: "This demo showcases how Agentic AI can streamline the grid impact evaluation process for large loads like data centers, automating analysis and report generation.",
   },
   {
+    title: "PowerSkills + PowerMCP",
+    videoId: "bxZu47f6fUE",
+    description: "This demo shows how PowerSkills and PowerMCP can be combined to equip AI agents with specialized knowledge and structured instructions for power-system simulation, analysis, and optimization across a range of industry software tools. The final report will follow an industry-standard format.",
+  },
+  {
     title: "Contingency Evaluation",
     videoId: "MbF-SlBI4Ws",
     description: "An LLM automatically operates power system software (PowerWorld, pandapower) to perform contingency analysis and generate professional reports.",
+  },
+  {
+    title: "Datacenter Siting Expert",
+    videoId: "ZfVGsxCv0eg",
+    description: "This tool leverages RAG to provide detailed information for potential datacenter locations, including local regulations, costs, and infrastructure.",
+    link: {
+      text: "Try it on Hugging Face",
+      url: "https://huggingface.co/spaces/zhangqianleo/datacenterAgent",
+    },
   },
   {
     title: "Load Growth Evaluation",
@@ -21,15 +35,6 @@ const demos = [
     title: "Electricity Market Expert",
     videoId: "ccY93ssvUwU",
     description: "An automated workflow that handles electricity market inquiries, generates professional responses, and supports human-in-the-loop review.",
-  },
-  {
-    title: "Datacenter Siting Expert",
-    videoId: "ZfVGsxCv0eg",
-    description: "This tool leverages RAG to provide detailed information for potential datacenter locations, including local regulations, costs, and infrastructure.",
-    link: {
-      text: "Try it on Hugging Face",
-      url: "https://huggingface.co/spaces/zhangqianleo/datacenterAgent",
-    },
   },
 ];
 
