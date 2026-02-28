@@ -31,6 +31,8 @@ const teamSections = [
       { name: "Shaohuai Liu", url: "https://liushaohuai5.github.io/" },
       { name: "Alban Puech", url: "https://www.linkedin.com/in/alban-puech-280500187/" },
       { name: "Lin Dong", url: "https://www.linkedin.com/in/lin-dong-464a08222/" },
+      { name: "Costas Mylonas", url: "https://www.linkedin.com/in/costas-mylonas-a0ab761b6/" },
+      { name: "Magda Foti", url: "https://www.linkedin.com/in/magda-foti/" },
       { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-75323111b/" },
     ],
   },
