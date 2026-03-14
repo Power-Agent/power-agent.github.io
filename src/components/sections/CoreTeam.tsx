@@ -23,6 +23,7 @@ const teamSections = [
       { name: "Muhy Eddin Za'ter", url: "https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" },
       { name: "Stephen Jenkins", url: "https://www.linkedin.com/in/stephenjenkins2/" },
       { name: "Maanas Goel", url: "https://www.linkedin.com/in/maanas-goel/" },
+      { name: "Steven Black", url: "https://www.linkedin.com/in/steven-black-09322b31/" },
     ],
   },
   {
