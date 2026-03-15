@@ -3,23 +3,30 @@ import { ExternalLink, Users } from "lucide-react";
 
 const teamSections = [
   {
-    title: "Faculty Leads",
-    members: [
-      { name: "Le Xie", url: "https://seas.harvard.edu/person/le-xie" },
+    title: "Leads",
+    subsections: [
+      {
+        title: "Faculty Leads",
+        members: [{ name: "Le Xie", url: "https://seas.harvard.edu/person/le-xie" }],
+      },
+      {
+        title: "Student Leads",
+        members: [{ name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" }],
+      },
     ],
   },
   {
     title: "PowerSkills",
     members: [
-      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-75323111b/" },
-      { name: "Muhy Eddin Za'ter", url: "https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" },
+      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
       { name: "Matheus Duarte", url: "https://www.linkedin.com/in/matheusduarte/" },
+      { name: "Muhy Eddin Za'ter", url: "https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" },
     ],
   },
   {
     title: "PowerMCP",
     members: [
-      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-75323111b/" },
+      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
       { name: "Muhy Eddin Za'ter", url: "https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" },
       { name: "Stephen Jenkins", url: "https://www.linkedin.com/in/stephenjenkins2/" },
       { name: "Maanas Goel", url: "https://www.linkedin.com/in/maanas-goel/" },
@@ -34,20 +41,20 @@ const teamSections = [
       { name: "Lin Dong", url: "https://www.linkedin.com/in/lin-dong-464a08222/" },
       { name: "Costas Mylonas", url: "https://www.linkedin.com/in/costas-mylonas-a0ab761b6/" },
       { name: "Magda Foti", url: "https://www.linkedin.com/in/magda-foti/" },
-      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-75323111b/" },
+      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
     ],
   },
   {
     title: "PowerWF",
     members: [
+      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
       { name: "Lin Dong", url: "https://www.linkedin.com/in/lin-dong-464a08222/" },
-      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-75323111b/" },
     ],
   },
   {
     title: "PowerAgent Platform",
     members: [
-      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-75323111b/" },
+      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
       { name: "Karina Chung", url: "https://www.linkedin.com/in/karina-chung/" },
       { name: "Skyler Liu", url: "https://www.linkedin.com/in/skylerliu/" },
     ],
@@ -76,21 +83,49 @@ const CoreTeam = () => {
                   <h3 className="text-lg font-semibold text-foreground mb-3 pb-2 border-b border-border">
                     {section.title}
                   </h3>
-                  <ul className="space-y-2">
-                    {section.members.map((member) => (
-                      <li key={member.name}>
-                        <a
-                          href={member.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-primary hover:underline inline-flex items-center gap-1 text-sm"
-                        >
-                          {member.name}
-                          <ExternalLink className="h-3 w-3" />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                  
+                  {section.subsections ? (
+                    <div className="space-y-4">
+                      {section.subsections.map((sub) => (
+                        <div key={sub.title}>
+                          <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
+                            {sub.title}
+                          </h4>
+                          <ul className="space-y-2">
+                            {sub.members.map((member) => (
+                              <li key={member.name}>
+                                <a
+                                  href={member.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-primary hover:underline inline-flex items-center gap-1 text-sm"
+                                >
+                                  {member.name}
+                                  <ExternalLink className="h-3 w-3" />
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <ul className="space-y-2">
+                      {section.members?.map((member) => (
+                        <li key={member.name}>
+                          <a
+                            href={member.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline inline-flex items-center gap-1 text-sm"
+                          >
+                            {member.name}
+                            <ExternalLink className="h-3 w-3" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </CardContent>
               </Card>
             ))}
