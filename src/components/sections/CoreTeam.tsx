@@ -31,6 +31,7 @@ const teamSections = [
       { name: "Stephen Jenkins", url: "https://www.linkedin.com/in/stephenjenkins2/" },
       { name: "Maanas Goel", url: "https://www.linkedin.com/in/maanas-goel/" },
       { name: "Steven Black", url: "https://www.linkedin.com/in/steven-black-09322b31/" },
+      { name: "Luan Lopes", url: "https://www.linkedin.com/in/luan-lopes/" },
     ],
   },
   {
@@ -83,7 +84,7 @@ const CoreTeam = () => {
                   <h3 className="text-lg font-semibold text-foreground mb-3 pb-2 border-b border-border">
                     {section.title}
                   </h3>
-                  
+
                   {section.subsections ? (
                     <div className="space-y-4">
                       {section.subsections.map((sub) => (
