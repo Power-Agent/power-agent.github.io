@@ -28,10 +28,12 @@ const teamSections = [
     members: [
       { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
       { name: "Muhy Eddin Za'ter", url: "https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" },
-      { name: "Stephen Jenkins", url: "https://www.linkedin.com/in/stephenjenkins2/" },
-      { name: "Maanas Goel", url: "https://www.linkedin.com/in/maanas-goel/" },
       { name: "Steven Black", url: "https://www.linkedin.com/in/steven-black-09322b31/" },
       { name: "Luan Lopes", url: "https://www.linkedin.com/in/luan-lopes/" },
+      { name: "Paulo Radatz", url: "https://www.linkedin.com/in/pauloradatz/" },
+      { name: "Stephen Jenkins", url: "https://www.linkedin.com/in/stephenjenkins2/" },
+      { name: "Maanas Goel", url: "https://www.linkedin.com/in/maanas-goel/" },
+      
     ],
   },
   {
