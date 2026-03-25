@@ -16,14 +16,6 @@ const teamSections = [
     ],
   },
   {
-    title: "PowerSkills",
-    members: [
-      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
-      { name: "Matheus Duarte", url: "https://www.linkedin.com/in/matheusduarte/" },
-      { name: "Muhy Eddin Za'ter", url: "https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" },
-    ],
-  },
-  {
     title: "PowerMCP",
     members: [
       { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
@@ -45,6 +37,14 @@ const teamSections = [
       { name: "Costas Mylonas", url: "https://www.linkedin.com/in/costas-mylonas-a0ab761b6/" },
       { name: "Magda Foti", url: "https://www.linkedin.com/in/magda-foti/" },
       { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
+    ],
+  },
+  {
+    title: "PowerSkills",
+    members: [
+      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
+      { name: "Matheus Duarte", url: "https://www.linkedin.com/in/matheusduarte/" },
+      { name: "Muhy Eddin Za'ter", url: "https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" },
     ],
   },
   {
