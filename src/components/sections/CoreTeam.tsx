@@ -25,7 +25,8 @@ const teamSections = [
       { name: "Paulo Radatz", url: "https://www.linkedin.com/in/pauloradatz/" },
       { name: "Stephen Jenkins", url: "https://www.linkedin.com/in/stephenjenkins2/" },
       { name: "Maanas Goel", url: "https://www.linkedin.com/in/maanas-goel/" },
-      
+      { name: "Shen Wang", url: "https://www.linkedin.com/in/swang16/" },
+
     ],
   },
   {
