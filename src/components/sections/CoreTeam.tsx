@@ -18,15 +18,15 @@ const teamSections = [
   {
     title: "PowerMCP",
     members: [
-      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
-      { name: "Muhy Eddin Za'ter", url: "https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" },
+      { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-75323111b/" },
       { name: "Steven Black", url: "https://www.linkedin.com/in/steven-black-09322b31/" },
-      { name: "Luan Lopes", url: "https://www.linkedin.com/in/luan-lopes/" },
       { name: "Paulo Radatz", url: "https://www.linkedin.com/in/pauloradatz/" },
+      { name: "Muhy Eddin Za'ter", url: "https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" },
+      { name: "Luan Lopes dos Santos", url: "https://www.linkedin.com/in/luan-lopes/" },
       { name: "Stephen Jenkins", url: "https://www.linkedin.com/in/stephenjenkins2/" },
       { name: "Maanas Goel", url: "https://www.linkedin.com/in/maanas-goel/" },
       { name: "Shen Wang", url: "https://www.linkedin.com/in/swang16/" },
-
+      { name: "Drew Gray", url: "https://www.linkedin.com/in/drew-gray-b09ba426/" },
     ],
   },
   {
