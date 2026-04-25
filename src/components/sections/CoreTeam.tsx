@@ -21,6 +21,7 @@ const teamSections = [
       { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-75323111b/" },
       { name: "Steven Black", url: "https://www.linkedin.com/in/steven-black-09322b31/" },
       { name: "Paulo Radatz", url: "https://www.linkedin.com/in/pauloradatz/" },
+      { name: "Andrea Pomarico", url: "https://www.linkedin.com/in/andrea-pomarico-2695a2218/" },
       { name: "Muhy Eddin Za'ter", url: "https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" },
       { name: "Luan Lopes dos Santos", url: "https://www.linkedin.com/in/luan-lopes/" },
       { name: "Stephen Jenkins", url: "https://www.linkedin.com/in/stephenjenkins2/" },
