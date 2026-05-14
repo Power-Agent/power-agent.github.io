@@ -34,6 +34,7 @@ const teamSections = [
     title: "PowerFM",
     members: [
       { name: "Shaohuai Liu", url: "https://liushaohuai5.github.io/" },
+      { name: "Yuting Cai", url: "https://www.linkedin.com/in/yuting-cai/" },
       { name: "Alban Puech", url: "https://www.linkedin.com/in/alban-puech-280500187/" },
       { name: "Lin Dong", url: "https://www.linkedin.com/in/lin-dong-464a08222/" },
       { name: "Costas Mylonas", url: "https://www.linkedin.com/in/costas-mylonas-a0ab761b6/" },
@@ -62,6 +63,7 @@ const teamSections = [
       { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
       { name: "Karina Chung", url: "https://www.linkedin.com/in/karina-chung/" },
       { name: "Skyler Liu", url: "https://www.linkedin.com/in/skylerliu/" },
+      { name: "Leo Winiecki", url: "https://www.linkedin.com/in/leo-winiecki-3337b716a/" },
     ],
   },
 ];
