@@ -1,15 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SectionHeader from "./SectionHeader";
 
 const QuickStart = () => {
   return (
     <section id="quick-start" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
-            Quick Start
-          </h2>
+          <SectionHeader
+            className="mb-8"
+            eyebrow="Get Started"
+            title="Quick Start"
+          />
           
           <Card className="overflow-hidden">
             <CardHeader className="bg-primary/5 border-b border-border">

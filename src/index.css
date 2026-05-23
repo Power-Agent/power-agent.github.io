@@ -162,3 +162,53 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Infinite scroll marquee for ContributorOrigins */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.marquee-track,
+.marquee-track-reverse {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.marquee-track {
+  animation: marquee linear infinite;
+}
+
+.marquee-track-reverse {
+  animation: marquee-reverse linear infinite;
+}
+
+/* Pause the row when hovering anywhere over it, so logos are easy to click */
+.marquee-row:hover .marquee-track,
+.marquee-row:hover .marquee-track-reverse {
+  animation-play-state: paused;
+}
+
+.marquee-fade {
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 7%, black 93%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, black 7%, black 93%, transparent 100%);
+}
+
+/* Subtle dotted backdrop for the contributors section */
+.dot-grid {
+  background-image: radial-gradient(hsl(var(--foreground) / 0.06) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .marquee-track-reverse {
+    animation: none;
+  }
+}

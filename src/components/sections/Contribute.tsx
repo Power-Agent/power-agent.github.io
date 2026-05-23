@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { GitPullRequest, Mail, Bell, ExternalLink } from "lucide-react";
+import { Mail, Bell, ExternalLink } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 import { toast } from "sonner";
 
 const Contribute = () => {
@@ -40,12 +41,15 @@ const Contribute = () => {
     <section id="contribute" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <GitPullRequest className="h-8 w-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              How to Contribute
-            </h2>
-          </div>
+          <SectionHeader
+            className="mb-8"
+            eyebrow="Get Involved"
+            title={
+              <>
+                How to <span className="text-primary">Contribute</span>
+              </>
+            }
+          />
           
           <Card className="border-border mb-8">
             <CardContent className="pt-6">

@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Play } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
 const demos = [
   {
@@ -42,14 +43,12 @@ const Demos = () => {
   return (
     <section id="demos" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Demos
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See PowerAgent in action with real-world power systems applications
-          </p>
-        </div>
+        <SectionHeader
+          className="mb-12"
+          eyebrow="In Action"
+          title="Demos"
+          subtitle="See PowerAgent in action with real-world power systems applications"
+        />
         
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
           {demos.map((demo) => (

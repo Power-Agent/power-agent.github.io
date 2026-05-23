@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Brain, Workflow, Puzzle, BookOpen } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
 const repositories = [
   {
@@ -33,9 +34,11 @@ const Introduction = () => {
     <section id="introduction" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10 text-center">
-            Introduction
-          </h2>
+          <SectionHeader
+            className="mb-10"
+            eyebrow="Overview"
+            title="Introduction"
+          />
           <div className="text-left space-y-4">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               PowerAgent is an open-source community dedicated to accelerating the development of LLM-powered Tools

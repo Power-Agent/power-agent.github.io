@@ -1,14 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 import visionImg from "@/assets/images/vision.png";
+import SectionHeader from "./SectionHeader";
 
 const Vision = () => {
   return (
     <section id="vision" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
-            Vision
-          </h2>
+          <SectionHeader
+            className="mb-8"
+            eyebrow="Our Mission"
+            title="Vision"
+          />
 
           {/* Vision Statement */}
           <Card className="mb-8 border-l-4 border-l-primary bg-primary/5 max-w-none">

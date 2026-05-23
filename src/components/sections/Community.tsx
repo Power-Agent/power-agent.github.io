@@ -1,15 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MessageSquare, BookOpen, ExternalLink } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
 const Community = () => {
   return (
     <section id="community" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
-            Community
-          </h2>
+          <SectionHeader
+            className="mb-8"
+            eyebrow="Join Us"
+            title="Community"
+          />
           
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-muted-foreground leading-relaxed">

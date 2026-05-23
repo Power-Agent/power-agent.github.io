@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink, Users } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
 const teamSections = [
   {
@@ -76,12 +77,11 @@ const CoreTeam = () => {
     <section id="core-team" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <Users className="h-8 w-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Core Team
-            </h2>
-          </div>
+          <SectionHeader
+            className="mb-8"
+            eyebrow="Meet the Team"
+            title="Core Team"
+          />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {teamSections.map((section) => (

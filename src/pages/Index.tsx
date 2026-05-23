@@ -7,6 +7,7 @@ import QuickStart from "@/components/sections/QuickStart";
 import Demos from "@/components/sections/Demos";
 import Community from "@/components/sections/Community";
 import CoreTeam from "@/components/sections/CoreTeam";
+import ContributorOrigins from "@/components/sections/ContributorOrigins";
 import Contribute from "@/components/sections/Contribute";
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
         <Demos />
         <Community />
         <CoreTeam />
+        <ContributorOrigins />
         <Contribute />
       </main>
       <Footer />
