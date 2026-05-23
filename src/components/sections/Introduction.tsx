@@ -47,7 +47,7 @@ const Introduction = () => {
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               We believe the future of agentic AI in the power domain will be driven by the combined development and
-              coordination of three key components — <strong>Foundation Models (FM)</strong>, <strong>Model Context Protocol (MCP)</strong>, and <strong>Workflows (WF)</strong>.
+              coordination of some key components — <strong>Foundation Models (PowerFM)</strong>, <strong>Model Context Protocol (PowerMCP)</strong>, <strong>Workflows (PowerWF)</strong>, and <strong>AgentSkills (PowerSkills)</strong>.
             </p>
           </div>
         </div>
