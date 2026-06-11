@@ -12,6 +12,8 @@ import unm from "@/assets/images/logos/unm.png";
 import polimi from "@/assets/images/logos/polimi.png";
 import cuboulder from "@/assets/images/logos/cuboulder.png";
 import larochelle from "@/assets/images/logos/larochelle.png";
+import gatech from "@/assets/images/logos/gatech.jpg";
+import umich from "@/assets/images/logos/umich.png";
 
 import isone from "@/assets/images/logos/isone.png";
 import ercot from "@/assets/images/logos/ercot.png";
@@ -24,7 +26,7 @@ import enliteai from "@/assets/images/logos/enliteai.svg";
 import ubitech from "@/assets/images/logos/ubitech.png";
 import amptimal from "@/assets/images/logos/amptimal.svg";
 
-type Org = { name: string; url: string; logo: string };
+type Org = { name: string; url: string; logo: string; imgClassName?: string };
 
 const academic: Org[] = [
   { name: "Harvard University", url: "https://www.harvard.edu", logo: harvard },
@@ -33,6 +35,8 @@ const academic: Org[] = [
   { name: "University of Pennsylvania", url: "https://www.upenn.edu", logo: upenn },
   { name: "ETH Zürich", url: "https://ethz.ch", logo: eth },
   { name: "Texas A&M University", url: "https://www.tamu.edu", logo: tamu },
+  { name: "Georgia Institute of Technology", url: "https://www.gatech.edu", logo: gatech, imgClassName: "max-h-[72px] max-w-[164px]" },
+  { name: "University of Michigan", url: "https://umich.edu", logo: umich, imgClassName: "max-h-[72px] max-w-[164px]" },
   { name: "University of Washington", url: "https://www.washington.edu", logo: uw },
   { name: "University of Colorado Boulder", url: "https://www.colorado.edu", logo: cuboulder },
   { name: "University of New Mexico", url: "https://www.unm.edu", logo: unm },
@@ -68,7 +72,7 @@ const LogoTile = ({ org, hidden = false }: { org: Org; hidden?: boolean }) => (
         src={org.logo}
         alt={`${org.name} logo`}
         loading="lazy"
-        className="max-h-14 max-w-[144px] object-contain transition-transform duration-300 group-hover:scale-105"
+        className={`${org.imgClassName ?? "max-h-14 max-w-[144px]"} object-contain transition-transform duration-300 group-hover:scale-105`}
       />
     </div>
     <span className="mb-4 line-clamp-2 text-center text-[11px] font-medium leading-tight text-muted-foreground transition-colors group-hover:text-foreground">
