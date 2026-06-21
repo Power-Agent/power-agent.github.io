@@ -1,7 +1,15 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { FileText, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SectionHeader from "./SectionHeader";
+
+const tutorialUrl =
+  "https://github.com/Power-Agent/PowerMCP/blob/main/PowerMCP_Tutorial.pdf";
 
 const QuickStart = () => {
   return (
@@ -15,32 +23,28 @@ const QuickStart = () => {
           />
           
           <Card className="overflow-hidden">
-            <CardHeader className="bg-primary/5 border-b border-border">
-              <div className="flex items-center justify-between">
+            <CardHeader className="bg-primary/5">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex items-center gap-3">
                   <FileText className="h-5 w-5 text-primary" />
-                  <CardTitle className="text-lg">PowerMCP Tutorial</CardTitle>
+                  <div>
+                    <CardTitle className="text-lg">PowerMCP Tutorial</CardTitle>
+                    <CardDescription>PowerMCP_Tutorial.pdf</CardDescription>
+                  </div>
                 </div>
-                <a
-                  href="https://raw.githubusercontent.com/Power-Agent/PowerMCP/main/PowerMCP_Tutorial.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="gap-2 self-start sm:self-auto"
                 >
-                  <Button variant="outline" size="sm" className="gap-2">
+                  <a href={tutorialUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="h-4 w-4" />
-                    Open PDF
-                  </Button>
-                </a>
+                    Open tutorial
+                  </a>
+                </Button>
               </div>
             </CardHeader>
-            <CardContent className="p-0">
-              <iframe
-                className="w-full border-0"
-                style={{ height: "70vh" }}
-                src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/Power-Agent/PowerMCP/main/PowerMCP_Tutorial.pdf&embedded=true"
-                title="PowerMCP Tutorial"
-              />
-            </CardContent>
           </Card>
         </div>
       </div>
