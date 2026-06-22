@@ -1,15 +1,5 @@
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { FileText, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import SectionHeader from "./SectionHeader";
-
-const tutorialUrl =
-  "https://github.com/Power-Agent/PowerMCP/blob/main/PowerMCP_Tutorial.pdf";
 
 const QuickStart = () => {
   return (
@@ -18,33 +8,24 @@ const QuickStart = () => {
         <div className="max-w-4xl mx-auto">
           <SectionHeader
             className="mb-8"
-            eyebrow="Get Started"
-            title="Quick Start"
+            eyebrow="Recent Release"
+            title="Recent Release"
+            subtitle="PowerMCP New Feature Release: Pip Install, Auto Setup, and PowerIO Integration"
           />
           
           <Card className="overflow-hidden">
-            <CardHeader className="bg-primary/5">
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                <div className="flex items-center gap-3">
-                  <FileText className="h-5 w-5 text-primary" />
-                  <div>
-                    <CardTitle className="text-lg">PowerMCP Tutorial</CardTitle>
-                    <CardDescription>PowerMCP_Tutorial.pdf</CardDescription>
-                  </div>
-                </div>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="sm"
-                  className="gap-2 self-start sm:self-auto"
-                >
-                  <a href={tutorialUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4" />
-                    Open tutorial
-                  </a>
-                </Button>
+            <CardContent className="p-0">
+              <div className="relative aspect-video bg-muted">
+                <iframe
+                  className="absolute inset-0 h-full w-full"
+                  src="https://www.youtube.com/embed/xwTcNZLmIW8"
+                  title="PowerMCP New Feature Release"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               </div>
-            </CardHeader>
+            </CardContent>
           </Card>
         </div>
       </div>
