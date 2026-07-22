@@ -212,3 +212,29 @@ All colors MUST be HSL.
     animation: none;
   }
 }
+
+@keyframes core-team-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.core-team-enter {
+  animation: core-team-enter 500ms ease-out both;
+}
+
+.core-team-enter-delay {
+  animation-delay: 100ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .core-team-enter,
+  .core-team-enter-delay {
+    animation: none;
+  }
+}

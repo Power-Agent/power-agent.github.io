@@ -1,21 +1,16 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
-const teamSections = [
+const teamLeads = [
+  { role: "Faculty Lead", name: "Le Xie", url: "https://seas.harvard.edu/person/le-xie" },
   {
-    title: "Leads",
-    subsections: [
-      {
-        title: "Faculty Leads",
-        members: [{ name: "Le Xie", url: "https://seas.harvard.edu/person/le-xie" }],
-      },
-      {
-        title: "Student Leads",
-        members: [{ name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" }],
-      },
-    ],
+    role: "Student Lead",
+    name: "Qian Zhang",
+    url: "https://www.linkedin.com/in/qian-zhang-harvard/",
   },
+];
+
+const teamSections = [
   {
     title: "PowerMCP",
     members: [
@@ -73,75 +68,87 @@ const teamSections = [
   },
 ];
 
-import SeasLogo from "@/assets/images/seaslogo.png";
-import PaiLogo from "@/assets/images/pailogo_black.png";
+const sectionSlug = (title: string) => title.toLowerCase().replaceAll(" ", "-");
+
+const sectionSpans: Record<string, string> = {
+  PowerMCP: "md:col-span-2 lg:col-span-8",
+  PowerFM: "lg:col-span-4",
+  PowerSkills: "lg:col-span-4",
+  PowerWF: "lg:col-span-4",
+  "PowerAgent Platform": "lg:col-span-4",
+};
 
 const CoreTeam = () => {
   return (
     <section id="core-team" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="mx-auto max-w-6xl">
           <SectionHeader
-            className="mb-8"
+            className="mb-6"
             eyebrow="Meet the Team"
             title="Core Team"
           />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {teamSections.map((section) => (
-              <Card key={section.title} className="border-border">
-                <CardContent className="pt-6">
-                  <h3 className="text-lg font-semibold text-foreground mb-3 pb-2 border-b border-border">
-                    {section.title}
-                  </h3>
-
-                  {section.subsections ? (
-                    <div className="space-y-4">
-                      {section.subsections.map((sub) => (
-                        <div key={sub.title}>
-                          <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
-                            {sub.title}
-                          </h4>
-                          <ul className="space-y-2">
-                            {sub.members.map((member) => (
-                              <li key={member.name}>
-                                <a
-                                  href={member.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-primary hover:underline inline-flex items-center gap-1 text-sm"
-                                >
-                                  {member.name}
-                                  <ExternalLink className="h-3 w-3" />
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <ul className="space-y-2">
-                      {section.members?.map((member) => (
-                        <li key={member.name}>
-                          <a
-                            href={member.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-primary hover:underline inline-flex items-center gap-1 text-sm"
-                          >
-                            {member.name}
-                            <ExternalLink className="h-3 w-3" />
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </CardContent>
-              </Card>
+          <div
+            data-testid="team-leads"
+            className="core-team-enter mx-auto mb-10 flex max-w-2xl flex-col items-center justify-center gap-5 border-y border-border/70 py-5 sm:flex-row sm:gap-0"
+          >
+            {teamLeads.map((lead) => (
+              <div
+                key={lead.role}
+                className="flex items-center gap-3 px-6 sm:[&:not(:first-child)]:border-l sm:[&:not(:first-child)]:border-border"
+              >
+                <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                  {lead.role}
+                </span>
+                <a
+                  href={lead.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+                >
+                  {lead.name}
+                  <ExternalLink className="h-3 w-3 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 motion-reduce:transform-none" />
+                </a>
+              </div>
             ))}
           </div>
 
+          <div
+            data-testid="team-grid"
+            className="core-team-enter core-team-enter-delay grid items-stretch gap-4 md:grid-cols-2 lg:grid-cols-12"
+          >
+            {teamSections.map((section) => (
+              <article
+                key={section.title}
+                data-testid={`team-${sectionSlug(section.title)}`}
+                className={`group/team rounded-lg border border-border bg-card p-6 transition-colors duration-200 hover:border-primary/40 ${sectionSpans[section.title]}`}
+              >
+                <h3 className="mb-4 border-b border-border pb-3 text-lg font-semibold text-foreground">
+                  {section.title}
+                </h3>
+                <ul
+                  className={`grid gap-x-6 gap-y-2.5 ${
+                    section.title === "PowerMCP" ? "sm:grid-cols-2" : "grid-cols-1"
+                  }`}
+                >
+                  {section.members.map((member) => (
+                    <li key={member.name}>
+                      <a
+                        href={member.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/member inline-flex items-center gap-1.5 text-sm text-primary hover:underline"
+                      >
+                        {member.name}
+                        <ExternalLink className="h-3 w-3 shrink-0 transition-transform duration-200 group-hover/member:-translate-y-0.5 group-hover/member:translate-x-0.5 motion-reduce:transform-none" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>
