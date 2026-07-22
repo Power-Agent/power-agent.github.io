@@ -30,6 +30,8 @@ const teamSections = [
       { name: "Shen Wang", url: "https://www.linkedin.com/in/swang16/" },
       { name: "Drew Gray", url: "https://www.linkedin.com/in/drew-gray-b09ba426/" },
       { name: "Samuel Talkington", url: "https://samueltalkington.com/" },
+      { name: "Laura Hwa", url: "https://www.linkedin.com/in/laurahwa/" },
+      { name: "Leo Winiecki", url: "https://www.linkedin.com/in/leo-winiecki-3337b716a/" },
     ],
   },
   {
@@ -65,7 +67,8 @@ const teamSections = [
       { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
       { name: "Karina Chung", url: "https://www.linkedin.com/in/karina-chung/" },
       { name: "Skyler Liu", url: "https://www.linkedin.com/in/skylerliu/" },
-      { name: "Leo Winiecki", url: "https://www.linkedin.com/in/leo-winiecki-3337b716a/" },
+      { name: "Xiaoyang Wang", url: "https://www.linkedin.com/in/xiaoyang-wang-a04658339/" },
+      { name: "Lloyd Pasley", url: "https://www.supernaenergy.com/" },
     ],
   },
 ];
