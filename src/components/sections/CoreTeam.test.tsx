@@ -23,6 +23,10 @@ it("places the requested members in their destination rosters", () => {
     "href",
     "https://www.supernaenergy.com/",
   );
+  expect(within(platform!).getByRole("link", { name: /Samuel Talkington/i })).toHaveAttribute(
+    "href",
+    "https://samueltalkington.com/",
+  );
   expect(within(platform!).queryByRole("link", { name: /Leo Winiecki/i })).not.toBeInTheDocument();
 });
 

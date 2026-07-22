@@ -64,6 +64,7 @@ const teamSections = [
       { name: "Skyler Liu", url: "https://www.linkedin.com/in/skylerliu/" },
       { name: "Xiaoyang Wang", url: "https://www.linkedin.com/in/xiaoyang-wang-a04658339/" },
       { name: "Lloyd Pasley", url: "https://www.supernaenergy.com/" },
+      { name: "Samuel Talkington", url: "https://samueltalkington.com/" },
     ],
   },
 ];
