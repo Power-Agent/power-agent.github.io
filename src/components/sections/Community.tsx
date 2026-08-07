@@ -76,24 +76,57 @@ const Community = () => {
                 <h3 className="text-xl font-semibold text-foreground">For Academic Use</h3>
               </div>
               <p className="text-muted-foreground text-sm mb-4">
-                Please cite the following{" "}
-                <a 
-                  href="https://ieeexplore.ieee.org/document/11131348" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline inline-flex items-center gap-1"
-                >
-                  paper <ExternalLink className="h-3 w-3" />
-                </a>
-                :
+                Please cite the following papers:
               </p>
-              <blockquote className="border-l-4 border-primary/30 pl-4 py-2 bg-muted/30 rounded-r-lg">
-                <p className="text-sm text-muted-foreground italic">
-                  Qian Zhang and Le Xie. "PowerAgent: A Road Map Toward Agentic
-                  Intelligence in Power Systems: Foundation Model, Model Context Protocol, and Workflow," in IEEE
-                  Power and Energy Magazine, vol. 23, no. 5, pp. 93-101, 2025.
-                </p>
-              </blockquote>
+              <div className="space-y-4">
+                <blockquote className="border-l-4 border-primary/30 pl-4 py-2 bg-muted/30 rounded-r-lg">
+                  <p className="text-sm text-muted-foreground italic">
+                    Qian Zhang and Le Xie. "PowerAgent: A Road Map Toward Agentic
+                    Intelligence in Power Systems: Foundation Model, Model Context Protocol, and Workflow," in IEEE
+                    Power and Energy Magazine, vol. 23, no. 5, pp. 93-101, 2025.
+                  </p>
+                  <a
+                    href="https://ieeexplore.ieee.org/document/11131348"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline inline-flex items-center gap-1 text-xs mt-2"
+                  >
+                    IEEE Xplore <ExternalLink className="h-3 w-3" />
+                  </a>
+                </blockquote>
+
+                <blockquote className="border-l-4 border-primary/30 pl-4 py-2 bg-muted/30 rounded-r-lg">
+                  <p className="text-sm text-muted-foreground italic">
+                    C. Mylonas, M. Foti, A. Pomarico, M. Duarte, Q. Zhang, and E. Varvarigos, "PowerAgentBench-SS:
+                    A Benchmark for Agentic AI in Power System Steady-State Studies," in Proc. North American Power
+                    Symposium (NAPS), 2026.
+                  </p>
+                  <a
+                    href="https://arxiv.org/abs/2606.18789"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline inline-flex items-center gap-1 text-xs mt-2"
+                  >
+                    arXiv:2606.18789 <ExternalLink className="h-3 w-3" />
+                  </a>
+                </blockquote>
+
+                <blockquote className="border-l-4 border-primary/30 pl-4 py-2 bg-muted/30 rounded-r-lg">
+                  <p className="text-sm text-muted-foreground italic">
+                    Q. Zhang, A. Pomarico, C. Mylonas, M. Foti, A. Berizzi, and L. Xie, "PowerAgentBench-Dyn:
+                    A Benchmark for Agentic AI in Power System Dynamic Studies," in Proc. North American Power
+                    Symposium (NAPS), 2026.
+                  </p>
+                  <a
+                    href="https://arxiv.org/abs/2606.20401"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline inline-flex items-center gap-1 text-xs mt-2"
+                  >
+                    arXiv:2606.20401 <ExternalLink className="h-3 w-3" />
+                  </a>
+                </blockquote>
+              </div>
             </CardContent>
           </Card>
         </div>
