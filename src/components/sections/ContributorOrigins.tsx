@@ -15,7 +15,7 @@ import larochelle from "@/assets/images/logos/larochelle.png";
 import gatech from "@/assets/images/logos/gatech.jpg";
 import umich from "@/assets/images/logos/umich.png";
 import rwthAachen from "@/assets/images/logos/rwth-aachen.png";
-import habitatEnergy from "@/assets/images/logos/habitat-energy.svg";
+import habitatEnergy from "@/assets/images/logos/habitat-energy.jpeg";
 
 import isone from "@/assets/images/logos/isone.png";
 import ercot from "@/assets/images/logos/ercot.png";
