@@ -14,6 +14,7 @@ import cuboulder from "@/assets/images/logos/cuboulder.png";
 import larochelle from "@/assets/images/logos/larochelle.png";
 import gatech from "@/assets/images/logos/gatech.jpg";
 import umich from "@/assets/images/logos/umich.png";
+import rwthAachen from "@/assets/images/logos/rwth-aachen.png";
 
 import isone from "@/assets/images/logos/isone.png";
 import ercot from "@/assets/images/logos/ercot.png";
@@ -42,6 +43,7 @@ const academic: Org[] = [
   { name: "University of New Mexico", url: "https://www.unm.edu", logo: unm },
   { name: "Politecnico di Milano", url: "https://www.polimi.it", logo: polimi },
   { name: "La Rochelle Université", url: "https://www.univ-larochelle.fr", logo: larochelle },
+  { name: "RWTH Aachen University", url: "https://www.rwth-aachen.de/", logo: rwthAachen, imgClassName: "max-h-12 max-w-[164px]" },
 ];
 
 const industry: Org[] = [

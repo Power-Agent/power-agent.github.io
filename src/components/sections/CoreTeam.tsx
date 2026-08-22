@@ -47,6 +47,7 @@ const teamSections = [
       { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
       { name: "Matheus Duarte", url: "https://www.linkedin.com/in/matheusduarte/" },
       { name: "Muhy Eddin Za'ter", url: "https://scholar.google.com/citations?user=_IFFYFAAAAAJ&hl=en" },
+      { name: "Steffen Kortmann", url: "https://www.linkedin.com/in/steffen-kortmann-46989a1b3/" },
     ],
   },
   {
