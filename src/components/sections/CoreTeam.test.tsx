@@ -15,6 +15,10 @@ it("places the requested members in their destination rosters", () => {
     "href",
     "https://www.linkedin.com/in/leo-winiecki-3337b716a/",
   );
+  expect(within(powerMcp!).getByRole("link", { name: /Brian Horakh/i })).toHaveAttribute(
+    "href",
+    "https://www.linkedin.com/in/brianhorakh/",
+  );
   expect(within(screen.getByTestId("team-powerskills")).getByRole("link", { name: /Steffen Kortmann/i })).toHaveAttribute(
     "href",
     "https://www.linkedin.com/in/steffen-kortmann-46989a1b3/",

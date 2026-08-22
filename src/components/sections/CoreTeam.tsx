@@ -27,6 +27,7 @@ const teamSections = [
       { name: "Samuel Talkington", url: "https://samueltalkington.com/" },
       { name: "Laura Hwa", url: "https://www.linkedin.com/in/laurahwa/" },
       { name: "Leo Winiecki", url: "https://www.linkedin.com/in/leo-winiecki-3337b716a/" },
+      { name: "Brian Horakh", url: "https://www.linkedin.com/in/brianhorakh/" },
     ],
   },
   {
