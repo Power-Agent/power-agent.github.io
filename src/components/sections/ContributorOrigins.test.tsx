@@ -18,3 +18,12 @@ it("lists HABITAT Energy among industry contributors", () => {
   expect(habitat).toHaveAttribute("href", "https://habitat.energy/");
   expect(screen.getAllByAltText("HABITAT Energy logo")).toHaveLength(2);
 });
+
+it("lists AEMO among industry contributors", () => {
+  render(<ContributorOrigins />);
+
+  const aemo = screen.getByRole("link", { name: /AEMO/i });
+
+  expect(aemo).toHaveAttribute("href", "https://aemo.com.au/");
+  expect(screen.getAllByAltText("AEMO logo")).toHaveLength(2);
+});

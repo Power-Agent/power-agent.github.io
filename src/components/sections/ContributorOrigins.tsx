@@ -27,6 +27,7 @@ import snorkel from "@/assets/images/logos/snorkel.svg";
 import enliteai from "@/assets/images/logos/enliteai.svg";
 import ubitech from "@/assets/images/logos/ubitech.png";
 import amptimal from "@/assets/images/logos/amptimal.svg";
+import aemo from "@/assets/images/logos/aemo.png";
 
 type Org = { name: string; url: string; logo: string; imgClassName?: string };
 
@@ -58,6 +59,7 @@ const industry: Org[] = [
   { name: "EnliteAI", url: "https://www.enlite.ai", logo: enliteai },
   { name: "UBITECH", url: "https://ubitech.eu", logo: ubitech },
   { name: "Amptimal", url: "https://amptimal.com", logo: amptimal },
+  { name: "AEMO", url: "https://aemo.com.au/", logo: aemo },
   {
     name: "HABITAT Energy",
     url: "https://habitat.energy/",
