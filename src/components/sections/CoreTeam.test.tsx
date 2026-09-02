@@ -54,6 +54,14 @@ it("renders leadership outside an aligned weighted project grid", () => {
     "href",
     "https://www.linkedin.com/in/qian-zhang-harvard/",
   );
+  const studentLead = within(leads).getByText("Student Lead");
+  const facultyLead = within(leads).getByText("Faculty Lead");
+  const studentLeadName = within(leads).getByRole("link", { name: "Qian Zhang" });
+  const facultyLeadName = within(leads).getByRole("link", { name: "Le Xie" });
+
+  expect(studentLead.compareDocumentPosition(facultyLead) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  expect(studentLeadName).toHaveClass("text-base", "md:text-lg");
+  expect(facultyLeadName).toHaveClass("text-base", "md:text-lg");
   expect(within(teamGrid).queryByText("Faculty Lead")).not.toBeInTheDocument();
   expect(powerMcp).toHaveClass("lg:col-span-8");
   expect(powerFm).toHaveClass("lg:col-span-4");

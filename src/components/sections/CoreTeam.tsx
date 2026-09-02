@@ -2,12 +2,12 @@ import { ExternalLink } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
 const teamLeads = [
-  { role: "Faculty Lead", name: "Le Xie", url: "https://seas.harvard.edu/person/le-xie" },
   {
     role: "Student Lead",
     name: "Qian Zhang",
     url: "https://www.linkedin.com/in/qian-zhang-harvard/",
   },
+  { role: "Faculty Lead", name: "Le Xie", url: "https://seas.harvard.edu/person/le-xie" },
 ];
 
 const teamSections = [
@@ -101,14 +101,14 @@ const CoreTeam = () => {
                 key={lead.role}
                 className="flex items-center gap-3 px-6 sm:[&:not(:first-child)]:border-l sm:[&:not(:first-child)]:border-border"
               >
-                <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                <span className="font-mono text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground md:text-sm">
                   {lead.role}
                 </span>
                 <a
                   href={lead.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+                  className="group inline-flex items-center gap-1.5 text-base font-semibold text-primary hover:underline md:text-lg"
                 >
                   {lead.name}
                   <ExternalLink className="h-3 w-3 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 motion-reduce:transform-none" />
