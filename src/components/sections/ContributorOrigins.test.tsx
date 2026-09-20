@@ -27,3 +27,12 @@ it("lists AEMO among industry contributors", () => {
   expect(aemo).toHaveAttribute("href", "https://aemo.com.au/");
   expect(screen.getAllByAltText("AEMO logo")).toHaveLength(2);
 });
+
+it("lists FAU Erlangen-Nürnberg among academic contributors", () => {
+  render(<ContributorOrigins />);
+
+  const fau = screen.getByRole("link", { name: /FAU Erlangen-Nürnberg/i });
+
+  expect(fau).toHaveAttribute("href", "https://www.fau.eu/");
+  expect(screen.getAllByAltText("FAU Erlangen-Nürnberg logo")).toHaveLength(2);
+});

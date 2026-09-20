@@ -28,6 +28,7 @@ const teamSections = [
       { name: "Laura Hwa", url: "https://www.linkedin.com/in/laurahwa/" },
       { name: "Leo Winiecki", url: "https://www.linkedin.com/in/leo-winiecki-3337b716a/" },
       { name: "Brian Horakh", url: "https://www.linkedin.com/in/brianhorakh/" },
+      { name: "Aswin Krishna Poyil", url: "https://www.linkedin.com/in/aswinkrishnapoyil/" },
     ],
   },
   {

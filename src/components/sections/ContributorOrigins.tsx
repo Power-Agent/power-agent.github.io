@@ -15,6 +15,7 @@ import larochelle from "@/assets/images/logos/larochelle.png";
 import gatech from "@/assets/images/logos/gatech.jpg";
 import umich from "@/assets/images/logos/umich.png";
 import rwthAachen from "@/assets/images/logos/rwth-aachen.png";
+import fau from "@/assets/images/logos/fau-erlangen-nuernberg.png";
 import habitatEnergy from "@/assets/images/logos/habitat-energy.jpeg";
 
 import isone from "@/assets/images/logos/isone.png";
@@ -46,6 +47,7 @@ const academic: Org[] = [
   { name: "Politecnico di Milano", url: "https://www.polimi.it", logo: polimi },
   { name: "La Rochelle Université", url: "https://www.univ-larochelle.fr", logo: larochelle },
   { name: "RWTH Aachen University", url: "https://www.rwth-aachen.de/", logo: rwthAachen, imgClassName: "max-h-12 max-w-[164px]" },
+  { name: "FAU Erlangen-Nürnberg", url: "https://www.fau.eu/", logo: fau },
 ];
 
 const industry: Org[] = [
