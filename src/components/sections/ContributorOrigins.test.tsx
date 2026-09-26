@@ -36,3 +36,12 @@ it("lists FAU Erlangen-Nürnberg among academic contributors", () => {
   expect(fau).toHaveAttribute("href", "https://www.fau.eu/");
   expect(screen.getAllByAltText("FAU Erlangen-Nürnberg logo")).toHaveLength(2);
 });
+
+it("lists The University of Hong Kong among academic contributors", () => {
+  render(<ContributorOrigins />);
+
+  const hku = screen.getByRole("link", { name: /The University of Hong Kong/i });
+
+  expect(hku).toHaveAttribute("href", "https://www.hku.hk/");
+  expect(screen.getAllByAltText("The University of Hong Kong logo")).toHaveLength(2);
+});
