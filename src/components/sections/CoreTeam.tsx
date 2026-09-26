@@ -57,6 +57,7 @@ const teamSections = [
     members: [
       { name: "Qian Zhang", url: "https://www.linkedin.com/in/qian-zhang-harvard/" },
       { name: "Lin Dong", url: "https://www.linkedin.com/in/lin-dong-464a08222/" },
+      { name: "Xueyuan Cui", url: "https://www.linkedin.com/in/xueyuan-cui-5ba698268/" },
     ],
   },
   {

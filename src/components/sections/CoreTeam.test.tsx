@@ -40,6 +40,10 @@ it("places the requested members in their destination rosters", () => {
     "https://samueltalkington.com/",
   );
   expect(within(platform!).queryByRole("link", { name: /Leo Winiecki/i })).not.toBeInTheDocument();
+  expect(within(screen.getByTestId("team-powerwf")).getByRole("link", { name: /Xueyuan Cui/i })).toHaveAttribute(
+    "href",
+    "https://www.linkedin.com/in/xueyuan-cui-5ba698268/",
+  );
 });
 
 it("renders leadership outside an aligned weighted project grid", () => {
