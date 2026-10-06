@@ -17,6 +17,7 @@ import umich from "@/assets/images/logos/umich.png";
 import rwthAachen from "@/assets/images/logos/rwth-aachen.png";
 import fau from "@/assets/images/logos/fau-erlangen-nuernberg.png";
 import universityOfHongKong from "@/assets/images/logos/university-of-hong-kong.svg";
+import iisc from "@/assets/images/logos/iisc.jpg";
 import habitatEnergy from "@/assets/images/logos/habitat-energy.jpeg";
 
 import isone from "@/assets/images/logos/isone.png";
@@ -50,6 +51,7 @@ const academic: Org[] = [
   { name: "RWTH Aachen University", url: "https://www.rwth-aachen.de/", logo: rwthAachen, imgClassName: "max-h-12 max-w-[164px]" },
   { name: "FAU Erlangen-Nürnberg", url: "https://www.fau.eu/", logo: fau },
   { name: "The University of Hong Kong", url: "https://www.hku.hk/", logo: universityOfHongKong },
+  { name: "Indian Institute of Science", url: "https://iisc.ac.in/", logo: iisc, imgClassName: "max-h-[72px] max-w-[144px]" },
 ];
 
 const industry: Org[] = [

@@ -29,6 +29,7 @@ const teamSections = [
       { name: "Leo Winiecki", url: "https://www.linkedin.com/in/leo-winiecki-3337b716a/" },
       { name: "Brian Horakh", url: "https://www.linkedin.com/in/brianhorakh/" },
       { name: "Aswin Krishna Poyil", url: "https://www.linkedin.com/in/aswinkrishnapoyil/" },
+      { name: "Burhan Abdullah", url: "https://www.linkedin.com/in/burhanabdullah/" },
     ],
   },
   {
